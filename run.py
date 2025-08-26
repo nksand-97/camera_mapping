@@ -1,5 +1,8 @@
+from data_loader import Data
+
+
 def main():
-    return
+    dl = Data()
 
 
 if __name__ == "__main__":
