@@ -1,0 +1,11 @@
+kitti:
+  dataset_path:   "../data/KITTI"
+  focal_u_cam2:   718.856
+  focal_v_cam2:   718.856
+  center_u_cam2:  607.1928
+  center_v_cam2:  185.2157
+
+metric3d:
+  model_path:   "./lib/Metric3D"
+  model_name:   "metric3d_vit_small"
+  ckpt_path:    "metric_depth_vit_small_800k"
