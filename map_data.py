@@ -2,6 +2,7 @@ import numpy as np
 
 # debug
 import matplotlib.pyplot as plt
+from scipy.spatial.transform import Rotation
 
 
 class MapData:
@@ -32,12 +33,13 @@ class MapData:
 
     # 推定位置の描画    
     def debug_visualize_pose(self):
+
         poses_t_arr = np.array(self.poses_t)
         plt.xlabel("x [m]")
         plt.ylabel("z [m]")
-        plt.xlim(-300, 300)
-        plt.ylim(-100, 500)
-        plt.plot(ts[:, 0], ts[:, 2], c="black", linestyle="--", label="ground_truth")
+        # plt.xlim(-300, 300)
+        # plt.ylim(-100, 500)
+        plt.plot(poses_t_arr[:, 0], poses_t_arr[:, 2], c="black", linestyle="--", label="ground_truth")
         plt.grid(color="lightgray", linestyle="--")
         plt.legend()
         plt.savefig("debug/output/pose.png")

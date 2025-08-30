@@ -16,6 +16,7 @@ kitti:
   imu_calib_x:   -0.05
   imu_calib_y:   0.32
   imu_calib_z:   0.63
+  imu_calib_r:  [[0, -1, 0], [0, 0, -1], [1, 0, 0]]
 
 metric3d:
   model_path:   "./lib/Metric3D"

@@ -12,7 +12,7 @@ def main():
     ds = KITTIDataset(config)
     de = DepthEstimator(config)
     mp = MapData()
-    imo = IMUOdometry()
+    imo = IMUOdometry(config)
     ekf = ExtendedKalmanFilter()
 
     init_pose_state = True

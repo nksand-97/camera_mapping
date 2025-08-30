@@ -4,4 +4,4 @@ class ExtendedKalmanFilter:
 
     
     def integrate(self, pose_gnss, pose_imu):
-        return pose_gnss
+        return pose_imu
